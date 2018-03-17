@@ -1,0 +1,133 @@
+* {
+  font-family: sans-serif; }
+
+body,
+html,
+canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+canvas {
+  display: block; }
+
+.startMenuWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.startMenu {
+  width: 350px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  display: table;
+  margin-top: 100px; }
+  .startMenu h1 {
+    text-align: center; }
+  .startMenu #playerNameInput {
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: border 0.3s, -webkit-box-shadow 0.3s;
+    transition: border 0.3s, -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s, border 0.3s;
+    transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+    font-size: 16px;
+    margin: 10px 0; }
+    .startMenu #playerNameInput:focus {
+      border: solid 1px #CCCCCC;
+      -webkit-box-shadow: 0 0 3px 1px #DDDDDD;
+              box-shadow: 0 0 3px 1px #DDDDDD; }
+  .startMenu #nickError {
+    opacity: 0;
+    color: red; }
+  .startMenu button {
+    width: 100%;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: large;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #2ecc71;
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 2px solid #28be68;
+    -webkit-box-shadow: inset 0 -2px #28be68;
+            box-shadow: inset 0 -2px #28be68;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 0; }
+    .startMenu button:hover, .startMenu button:active {
+      background: #55D88B;
+      outline: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      position: relative;
+      top: 1px; }
+  .startMenu .setting {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height linear 0.3s;
+    transition: max-height linear 0.3s; }
+    .startMenu .setting ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .startMenu .setting ul li {
+        width: 50%; }
+  .startMenu .instructions li {
+    margin: 2px 0; }
+  .startMenu .instructions strong {
+    color: white;
+    background-color: #333;
+    font-weight: normal;
+    border-radius: 3px;
+    padding: 0 2px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+.gameAreaWrapper {
+  width: 100%;
+  height: 100%; }
+  .gameAreaWrapper #status {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    right: 10px;
+    top: 10px;
+    width: 200px;
+    font-size: 16px; }
+    .gameAreaWrapper #status h4 {
+      text-align: center; }
+    .gameAreaWrapper #status #leadboard {
+      list-style: none;
+      margin: 0;
+      padding: 0 10px;
+      overflow: hidden; }
+      .gameAreaWrapper #status #leadboard li {
+        white-space: nowrap; }

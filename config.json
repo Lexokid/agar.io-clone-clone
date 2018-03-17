@@ -1,0 +1,37 @@
+{
+  "host": "0.0.0.0",
+  "port": 8088,
+
+  "gameWidth": 5000,
+  "gameHeight": 5000,
+  "gameMass": 50000,
+  "maxFood": 1200,
+  "maxVirus": 50,
+  "foodMass": 1,
+  "playerFoodMass": 20,
+  "defaultPlayerMass": 10,
+  "limitSplit": 16,
+  "mergeTimer": 8,
+  "slowBase": 4.5,
+  "massLossRate": 3,
+  "minMassLoss": 50,
+  "playerVisibleWidth": 1600,
+  "playerVisibleHeight": 900,
+
+  "virus": {
+    "fill": "#33ff33",
+    "stroke": "#19D119",
+    "strokeWidth": 20,
+    "defaultMass": {
+      "from": 100,
+      "to": 110
+    },
+    "splitMass": 200
+  },
+
+  "logChat": 0,
+  "maxHeartbeatInterval": 5000,
+  "foodUniformDisposition": true,
+  "virusUniformDisposition": true,
+  "newPlayerInitialPosition": "farthest"
+}

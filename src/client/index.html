@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="startMenuWrapper">
+    <div class="startMenu">
+      <h1>agar</h1>
+      <input type="text" id="playerNameInput" placeholder="请输入你的游戏名" autofocus>
+      <span id="nickError">请输入合法名称，喵</span>
+      <button id="startButton">开始游戏</button>
+      <button id="observerButton">观战</button>
+      <button id="settingsButton">设置</button>
+      <div class="setting">
+        <h3>设置选项</h3>
+        <ul>
+          <li>
+            <input type="checkbox" name="" id="visFps">
+            <label for="visFps">显示帧数</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="visPing">
+            <label for="visPing">显示Ping</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="visMass">
+            <label for="visMass">显示分数</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="visBorder">
+            <label for="visBorder">显示边界边框</label>
+          </li>
+          <li>
+              <input type="checkbox" name="" id="darkMode">
+              <label for="darkMode">黑色背景</label>
+            </li>
+        </ul>
+      </div>
+      <div class="instructions">
+          <h3>玩法</h3>
+          <ul>
+              <li>使用鼠标去移动你的角色</li>
+              <li><strong>w</strong> 键吐出小球</li>
+              <li><strong>space</strong> 空格键快速分裂</li>
+              <li>尝试去吃其他玩家和食物以增长自己的角色，并生存到最后</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="gameAreaWrapper">
+    <canvas id="canvas" tabindex='1'></canvas>
+    <div id="status">
+      <h4>排行榜</h4>
+      <ul id="leadboard"></ul>
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
